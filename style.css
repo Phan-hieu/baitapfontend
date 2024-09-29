@@ -1,0 +1,463 @@
+/* Đặt nền và font chữ tổng thể */
+.menu {
+    background: #00000000;
+    font-size: 18px;
+    margin-left: 10px;
+
+
+}
+
+.dropdown .menu {
+    background-color: #ffffff00;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.dropdown .connten {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.611);
+}
+
+.dropdown:hover .connten {
+    display: block;
+    align-items: center;
+}
+
+.dropdown:hover .menu {
+    background-color: #ffffff00;
+
+}
+
+.dropdown a:hover {
+    background-color: #c3c2c2;
+
+}
+
+.logo #anh1 {
+    width: 150px;
+    height: 60px;
+}
+
+.anh {
+    width: 476px;
+    height: 280px;
+    margin-bottom: 1em;
+    margin-top: 400px;
+    margin-left: 50px;
+}
+
+.bamphai {
+    position: absolute;
+    /* Định vị tương đối với container */
+    top: 0;
+    /* Bám sát vào phía trên */
+    right: 0;
+    /* Bám sát vào bên phải */
+    padding: 10px;
+    display: flex;
+}
+
+
+.nuttai {
+    margin-left: 150px;
+    align-items: center;
+    background-color: #ffffff00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.nuttai:hover {
+    /* background-color: #9291914b; */
+    color: #a0a0a0af;
+
+}
+
+.line {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+.line::before,
+.line::after {
+    align-items: center;
+    content: "";
+    width: 150px;
+    border-bottom: 2px solid rgb(245, 244, 244);
+    /* Độ dày và màu sắc của line */
+}
+
+.line::before {
+    margin-right: 5px;
+    /* Khoảng cách từ line đến dấu chấm */
+}
+
+.line::after {
+    margin-left: 5px;
+    /* Khoảng cách từ line đến dấu chấm */
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    /* Màu sắc của dấu chấm */
+    border-radius: 5px;
+
+
+    /* Biến thành hình tròn */
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Video bao phủ chiều ngang và giãn theo chiều rộng */
+    height: 900px;
+    /* Chiều cao tự động theo tỷ lệ gốc */
+    object-fit: cover;
+    /* Giữ tỷ lệ video, cắt phần thừa nếu cần */
+    z-index: -1;
+    /* Đặt video dưới nội dung */
+    background-size: cover;
+}
+
+/* Header */
+header {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    /* Giới hạn chiều cao của header */
+    overflow: hidden;
+    /* Ẩn phần video vượt quá */
+}
+
+header .logo {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.icon {
+    margin-top: 12px;
+    display: flex;
+    margin: 12px 10px 0px 10px;
+
+
+
+
+}
+
+.phantai {
+    background-color: #28282852;
+    width: 600px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+    /* Để các ảnh có thể xuống hàng nếu không đủ chỗ */
+    margin-left: 208px;
+    gap: 20px;
+    /* Khoảng cách giữa các ảnh */
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+    /*  Thêm hiệu ứng chuyển động mượt  */
+}
+
+
+.nhay {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+    /* Hiệu ứng chuyển động mượt */
+}
+
+.nhay:hover {
+    transform: translateY(-5px);
+    /* Di chuyển lên trên 20px */
+}
+
+.box img {
+
+    width: 30px;
+    /* Đặt chiều rộng cố định cho tất cả ảnh */
+    height: 30px;
+    /* Đặt chiều cao cố định cho tất cả ảnh */
+    object-fit: cover;
+}
+
+
+a {
+    color: white;
+}
+
+nav {
+    margin-left: 10;
+}
+
+.login {
+    background-color: #ffffff;
+    color: rgb(121, 119, 119);
+    width: 75px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.login:hover {
+    background-color: #c98a15;
+}
+
+header nav ul {
+    height: 100px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul {
+    margin-left: -100px;
+}
+
+
+header nav ul li {
+    margin: 0 0px;
+
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .menu:hover {
+    /* text-decoration: underline; */
+    display: inline-block;
+    /* Giữ văn bản thành một khối để áp dụng border */
+    border-bottom: 2px solid rgb(255, 255, 255);
+    /* Tạo đường gạch chân với độ dày 2px */
+    padding-bottom: 5px;
+    /* Tạo khoảng cách 10px giữa văn bản và đường gạch chân */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1a16;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.content h1 {
+    color: #d6a85e;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content h2 {
+    color: #f8c250;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.anh-container {
+    position: relative;
+    max-width: 45%;
+}
+
+.anh-container img {
+    width: 100%;
+    border: 3px solid red;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.slider-img {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    /* Thiết lập chiều cao cố định */
+    object-fit: cover;
+    /* Đảm bảo ảnh giữ tỷ lệ mà không bị biến dạng */
+
+}
+
+.slider-img img {
+    width: 100%;
+
+}
+
+.slider-img input {
+    display: none;
+}
+
+.lableslider {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.lableslider label {
+    width: 30px;
+    height: 20px;
+    border-radius: 20px;
+    border: 3px solid rgb(188, 120, 10);
+}
+
+.lableslider label:hover {
+    background-color: rgb(233, 168, 4);
+}
+
+#img1:checked~.imgslider1 {
+    margin-left: -100%;
+}
+
+#img2:checked~.imgslider2 {
+    margin-left: -200%;
+}
+
+#img3:checked~.imgslider3 {
+    margin-left: -300%;
+}
+
+#img4:checked~.imgslider4 {
+    margin-left: -400%;
+}
+
+#img5:checked~.imgslider5 {
+    margin-left: -500%;
+}
+
+.thanhtich {
+    width: 100px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* Thiết lập chiều cao cố định */
+    object-fit: cover;
+    /* Đảm bảo ảnh giữ tỷ lệ mà không bị biến dạng */
+}
+
+.s {
+    width: 100px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* Thiết lập chiều cao cố định */
+    object-fit: cover;
+    /* Đảm bảo ảnh giữ tỷ lệ mà không bị biến dạng */
+}
+
+.new {
+    width: 100px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* Thiết lập chiều cao cố định */
+    object-fit: cover;
+    /* Đảm bảo ảnh giữ tỷ lệ mà không bị biến dạng */
+}
+
+.cuoi {
+    width: 100%;
+    height: 200px;
+    background-color: #6b0000;
+}
+
+.ct {
+    display: flex;
+    border: 10px;
+    font-size: 20px;
+}
+
+.ct {
+    display: flex;
+    /* Màu nền */
+    color: white;
+    /* Màu chữ */
+    padding: 20px;
+    /* Khoảng cách bên trong */
+    /* margin-left: 20px; */
+    /* Khoảng cách giữa các thẻ */
+
+}
+
+
+
+.ct,
+#ct2 {
+    margin-left: 20px;
+}
+
+.ct,
+#ct3 {
+    margin-left: 150px;
+}
+
+.ic {
+    width: 10px;
+    height: 20px;
+    margin-left: 250px;
+    gap: 20px;
+}
